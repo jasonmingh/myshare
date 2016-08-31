@@ -1,0 +1,4 @@
+
+ObjectMapper objectMapper = new ObjectMapper();
+Map<String, Object> maps = objectMapper.readValue(jsonObj, new TypeReference<Map<String, Object>>(){});
+CLASS name = objectMapper.convertValue(maps.get("something"),CLASS.class);
